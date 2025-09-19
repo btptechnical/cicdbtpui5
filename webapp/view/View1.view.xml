@@ -1,0 +1,23 @@
+<mvc:View controllerName="ns.uiproduct.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+
+    <List
+		id="ShortProductList"
+		headerText="Products"
+		items="{
+			path: '/Products',
+			sorter: {
+				path: 'ProductName'
+			}
+		}">
+	<items>
+			<StandardListItem id="idsli"
+				title="{ProductID}"
+				description="{ProductName}" />
+		</items>
+	</List>
+
+    </Page>
+</mvc:View>
